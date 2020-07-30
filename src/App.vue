@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>BrewDog Beers</h1>
+    <beer-list></beer-list>
+    <favourite-beers></favourite-beers>
+    <beer-detail></beer-detail>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BeerList from './components/BeerList.vue';
+import FavouriteBeers from './components/FavouriteBeers.vue';
+import BeerDetail from './components/BeerDetail.vue';
 
 export default {
-  name: 'App',
+
+
   components: {
-    HelloWorld
+    "beer-list": BeerList,
+    "beer-detail": BeerDetail,
+    "favourite-beers": FavouriteBeers
   }
+
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
